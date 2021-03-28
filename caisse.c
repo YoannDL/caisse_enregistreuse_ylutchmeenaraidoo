@@ -29,24 +29,96 @@ int main()
    	
    }
    change=montant_client-montant_a_payer;
+   printf("le montant a payer est:");
    printf("%f\n",change);
    
    //function to calculate the change 
+
    double cashValues[14] = {2000,1000,500,200,100,50,25,20,10,5,1,0.5,0.2,0.05};
+   int amountOfCash[14] = {10,10,10,10,10,10,10,10,10,10,10,10,10,10};
    
-   difference = change;
+    difference = change;
    while (difference != 0) {
 	  int i; 
       for(i=0; i<14; i++) {
+      	
          if(cashValues[i] <= difference) {
+         	
               difference -= cashValues[i];
+              printf("retourner une devise de:");
               printf("%f \n", cashValues[i]);
-              i=0;
-         }
+          }
+      }
+  }
+    double cashValue[14];
+    change=montant_client-montant_a_payer;
+    while (change != 0) {
+	  int i; 
+      for(i=0; i<14; i++) {
+      	
+         if(cashValues[i] <= difference) {
+         	
+              difference -= cashValues[i];
+           if(cashValue[i]=2000)
+              {
+              	amountOfCash[0] -=1;
+			  }
+			  else if(cashValue[i]=1000)
+              {
+              	amountOfCash[1] -=1;
+			  }
+			  else if(cashValue[i]=500)
+              {
+              	amountOfCash[2] -=1;
+              }
+              	else if(cashValue[i]=200)
+              {
+              	amountOfCash[3] -=1;
+			  }
+			  else if(cashValue[i]=100)
+              {
+              	amountOfCash[4] -=1;
+			  }
+			  else if(cashValue[i]=50)
+              {
+              	amountOfCash[5] -=1;
+			  }
+			  else if(cashValue[i]=25)
+              {
+              	amountOfCash[6] -=1;
+			  }
+			  else if(cashValue[i]=20)
+              {
+              	amountOfCash[7] -=1;
+			  }
+			  else if(cashValue[i]=10)
+              {
+              	amountOfCash[8] -=1;
+			  }
+			  int loop;
+			  //loop=0;
+			  if(loop <14)
+			  {
+			  printf("%d",amountOfCash[loop]);
+			  loop++;
+			  }
+            
     }
 }
-   
-    
-    
-   return 0 ;
+
 }
+}
+	
+ 
+
+  
+    
+
+
+
+
+
+    
+    
+   
+
